@@ -1,0 +1,453 @@
+OLD HOME SECTIONS
+  
+  // old
+  
+  .SecondLax {
+    // margin-top:-10px;
+    text-align:center;
+    h3,p, a{color: $white; text-shadow: 0px 1px 1px rgba($black, .6);}
+    p{font-size:21px;}
+    h3{font-size:24px; line-height: 1.7em;}
+    h3 span{font-family: $chels; font-size: 35px; margin-right:2px; color: $color1;}
+      
+    h3{font-size:21px;}
+    h3 span{font-size:40px;}
+  }
+  
+  .HomeVideoSec{@include sec-default();
+    padding:60px 0;
+    iframe {width:100%; height:529px;}
+
+    .HlfOne, .HlfTwo{display: inline-block; width:87%;}
+    .HlfTwo{width:10%; float:right; margin-top: 10%;}
+    h4{margin-bottom: 0; font-weight: bold;}
+  }
+
+  .logoRow{@include sec-default(); text-align: center;
+    .logoImg{display: inline-block; float: none; width: 20%; margin: 30px 2.5%;}
+  }
+
+
+EDU DETAILS CONTENT
+	Grade 3
+  A.	Motions and Stability - 1,
+  B.	Molecules to Organisms - 5,6
+  C.	Heredity - 7,8
+  D.	Unity and Diversity - 9,10,11,12
+  E.	Earth Systems and Human Activity - 13,15 
+  
+  Grade 4
+  A.	Energy- 3,5
+  B.	Waves and their Applications-6
+  C.	Molecular Structure and Processes-11
+  D.	Earth Systems- 16,17
+  
+  Grade 5
+  A.	Matter and its Interactions- 3,4,5
+  B.	Motion and Stability- Forces and Interactions- 6
+  C.	Ecosystems- Interactions, Energy and Dynamics- 8,10,11
+  D.	Earths Place in the Universe- 13
+  E.	Earths Systems- 14,15
+  F.	Earth and Human Activity- 16,17
+  
+  Grade 6
+  A.	Earth Systems- 1
+  B.	Earth’s Systems- 4,5,6,9,11,12,14
+  C.	Earth and Human Activity- 15,16
+  
+  
+  Grade 7
+  A.	Molecular Structure and Processes- 2,3,
+  B.	Ecosystems: Interaction, Energy, and Dynamics- 5,6,7,8,9,10,11
+  C.	Heredity- 13
+  D.	Unity and Diversity- 16,18
+  
+  Grade 8
+  A.	Matter and Interaction- 3,4,5
+  B.	Motion- Forces and Interaction- 12
+  C.	Energy- 15
+  D.	Waves and Information Transfer- 17
+  
+  Environmental Science
+  A.	       Earth and Human Activity- 1,3,4,5,6,7,8,10,11,12,13
+  
+  Biology
+  A.	        Ecosystems: Interactions, Energy, and Dynamics- 7,8,9,10
+  B.	        Unity and Diversity- 13,14,15,16
+  
+  Physical Science
+  A.	  	  Matter and its Interactions-3,4
+  B.	         Motion and Stability- 7
+  C.	          Energy- 12
+  D.	          Waves- 13
+
+
+EDU DETAILS BEFORE ACCORDION
+  import React from "react";
+  import { Helmet } from "react-helmet";
+  import classes from "./EducationalDetails.scss";
+  import Table from "./EdTable.js";
+  import PageHeader from "../../../components/PageHeader/PageHeader";
+  import phImage from "../../../assets/images/classes9.jpg";
+
+
+
+  const educationalDetails = () => {
+    const row3Items = [
+      {id: 1, discipline: 'Motions and Stability', standard: '1'},
+      {id: 2, discipline: 'Molecules to Organisms', standard: '5, 6'},
+      {id: 3, discipline: 'Heredity', standard: '7, 8'},
+      {id: 4, discipline: 'Unity and Diversity', standard: '9, 10, 11, 12'},
+      {id: 5, discipline: 'Earth Systems and Human Activity', standard: '13, 15'},
+    ];
+
+    const row4Items = [
+      {id: 1, discipline: 'Energy', standard: '3, 5'},
+      {id: 2, discipline: 'Waves and their Applications', standard: '6'},
+      {id: 3, discipline: 'Molecular Structure and Processes', standard: '11' },
+      {id: 4, discipline: 'Earth Systems', standard: '16, 17'},
+    ];
+
+    const row5Items = [
+      {id: 1, discipline: 'Matter and its Interactions', standard: '3, 4, 5' },
+      {id: 2, discipline: 'Motion and Stability- Forces and Interactions', standard: '6' },
+      {id: 3, discipline: 'Ecosystems- Interactions, Energy and Dynamics', standard: '8, 10, 11'},
+      {id: 4, discipline: 'Earths Place in the Universe', standard: '13'},
+      {id: 5, discipline: 'Earths Systems', standard: '14, 15'},
+      {id: 6, discipline: 'Earth and Human Activity', standard: '16 17'},
+    ];
+
+    const row6Items = [
+      {id: 1, discipline: 'Earth Systems', standard: '1'},
+      {id: 2, discipline: 'Earth’s Systems', standard: '4, 5, 6, 9, 11, 12, 14'},
+      {id: 3, discipline: 'Earth and Human Activity', standard: '15, 16'},
+    ];
+
+    const row7Items = [
+      {id: 1, discipline: 'Molecular Structure and Processes', standard: '2, 3'},
+      {id: 2, discipline: 'Ecosystems: Interaction, Energy, and Dynamics', standard: '5, 6, 7, 8, 9, 10, 11'},
+      {id: 3, discipline: 'Heredity', standard: '13'},
+      {id: 4, discipline: 'Unity and Diversity', standard: '16, 18'},
+    ];
+
+    const row8Items = [
+      {id: 1, discipline: 'Matter and Interaction', standard: '3, 4, 5'},
+      {id: 2, discipline: 'Motion- Forces and Interaction', standard: '12'},
+      {id: 3, discipline: 'Energy', standard: '15'},
+      {id: 4, discipline: 'Waves and Information Transfer', standard: '17'},
+    ];
+
+    const rowEnvItems = [
+      {id: 1, discipline: 'Earth and Human Activity', standard: '1, 3, 4, 5, 6, 7, 8, 10, 11, 12, 13'},
+    ];
+
+    const rowBioItems = [
+      {id: 1, discipline: 'Ecosystems: Interactions, Energy, and Dynamics', standard: '7, 8, 9, 10'},
+      {id: 2, discipline: 'Unity and Diversity', standard: '13, 14, 15, 16'},
+    ];
+
+    const rowPsItems = [
+      {id: 1, discipline: 'Matter and its Interactions', standard: '3, 4'},
+      {id: 2, discipline: 'Motion and Stability', standard: '7'},
+      {id: 3, discipline: 'Energy', standard: '12'},
+      {id: 4, discipline: 'Waves', standard: '13'},
+    ];
+
+    return (
+      <div className={classes.EducationalDetails}>
+        <Helmet>
+          <title>Alabama State Learning Standards</title>
+          <meta name="description" content="" />
+        </Helmet>
+        <PageHeader
+          phImage={phImage}
+          // Height="short"
+          pageTitle="Alabama State Learning Standards"
+          ovPacity="0"
+          Color="white"
+        />
+
+        <div className={classes.med2Def}>
+          <div className={classes.overView}>
+            {/* <h2>2015 Alabama Course of Study</h2>
+              ?? After reserving your field trip dates, we will contact you to customize the areas you want covered, what specific terms you want discussed, and where the focus of the trip should be. We want to give you the trip you want, not the trip we want. 
+            */}
+
+            <p>The Marine Science Adventures program meets many of the standards required by each state for its science grade levels. 
+              Additionally, we can also adapt the field trip to cover the specific areas each teacher wants to address. 
+              Once you reserve your field trip dates, we will contact you to customize any areas you want covered, specific 
+              terms you want discussed, and where the focus of the trip should be. We want to give you the trip you want, not the trip we want. 
+            </p>
+
+            <p>Our field trip is for grades 3-12. This list below is based on the 2015 Alabama course of study, 
+              and shows the standards we meet for grades 3-8, as well as Environmental Science, Biology, and Physical Science. 
+              They are listed by grade/subject, disciplinary core idea, and content standard met.</p>
+          </div>
+        </div>
+
+        <div className={classes.medDef}>
+          <div className={classes.spacer3}/>
+          <div className={classes.GradeItem}>
+            <h4>Grade 3:</h4>
+            <Table rowItems={row3Items} />
+          </div>
+
+          <div className={classes.GradeItem}>
+            <h4>Grade 4:</h4>
+            <Table rowItems={row4Items} />
+          </div>
+
+          <div className={classes.GradeItem}>
+            <h4>Grade 5:</h4>
+            <Table rowItems={row5Items} />
+          </div>
+
+          <div className={classes.GradeItem}>
+            <h4>Grade 6:</h4>
+            <Table rowItems={row6Items} />
+          </div>
+
+          <div className={classes.GradeItem}>
+            <h4>Grade 7:</h4>
+            <Table rowItems={row7Items} />
+          </div>
+
+          <div className={classes.GradeItem}>
+            <h4>Grade 8:</h4>
+            <Table rowItems={row8Items} />
+          </div>
+
+          <div className={classes.GradeItem}>
+            <h4>Environmental Science</h4>
+            <Table rowItems={rowEnvItems} />
+          </div>
+
+          <div className={classes.GradeItem}>
+            <h4>Biology</h4>
+            <Table rowItems={rowBioItems} />
+          </div>
+
+          <div className={classes.GradeItem}>
+            <h4>Physical Science</h4>
+            <Table rowItems={rowPsItems} />
+          </div>    
+        </div>
+      </div>
+    );
+  };
+
+  export default educationalDetails;
+
+
+
+TRIPMAPS -- complicated
+  import React from "react";
+  import classes from "./TripMaps.scss";
+  // import MapsList from "../../../components/Maps/MapsList";
+  import PageHeader from "../../../components/PageHeader/PageHeader"
+  import phImage from "../../../assets/images/ft1.jpg"
+
+  import Maps from "../../../components/Maps/Maps";
+
+
+  const tripMaps = () => {
+    const medInfo = (
+      <div>
+        <p><b>South Baldwin Urgent Care</b><br />
+        101 E 15th Ave<br /> Gulf Shores, AL 36542<br />
+        (251) 962-1250</p>
+
+        <p><b>Infirmary Immediate Care</b><br />
+        1140 Gulf Shores<br /> Pkwy Gulf Shores, AL 36542<br />
+        (251) 968-2273</p>
+
+        <p><b>South Baldwin Regional Medical Center</b><br />
+        1613 N McKenzie St<br />Foley, AL 36535<br />
+        (251) 949-3400</p>
+
+        <p><b>Walgreens</b><br />
+        1421 Gulf Shores Pkwy<br />Gulf Shores, AL 36542<br />
+        (251) 968-5946</p>
+      </div>
+    );
+    const medInfo2 = (
+      <div>
+        <p><b>Baptist Hospital</b><br />
+        1000 West Moreno St.<br /> Pensacola, FL 32501<br />
+        (850) 434-4011</p>
+
+        <p><b>WalMart Pharmacy </b><br />
+        2951 S Blue Angel Pkwy<br /> Pensacola, FL 32506<br />
+        (850) 458-5606 </p>
+        
+        <p><b>Perdido Urgent Care </b><br />
+        12385 Sorrento Rd<br /> Pensacola, FL 32507<br />
+        (850) 466-8668</p>
+      </div>
+    );
+
+    const listFeeds = [
+      {id: 1, title: 'Alligator Alley', mapSrc:"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13749.676190479167!2d-87.6997038!3d30.5091877!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3e70257e72ea8ae3!2sAlligator+Alley!5e0!3m2!1sen!2sus!4v1553188203964", address:"19500 Co Rd 71, Summerdale, AL 36580", intersection:"Couch Plant Road and 71", phone:"(251) 946-2483", meds:[medInfo]},
+      {id: 2, title: 'Bon Secour National Wildlife Refuge', mapSrc:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3447.2321876169462!2d-87.83358558478854!3d30.230454581814968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x889a1f348c6b5467%3A0x8e0f4ac324383cd0!2s464+Mobile+St%2C+Gulf+Shores%2C+AL+36542!5e0!3m2!1sen!2sus!4v1553188739309", address:"464 Mobile Street, Gulf Shores, AL 36542", intersection:"Mobile Street and Mobile Street West", meds:[medInfo]},
+      {id: 3, title: 'Estuary', mapSrc:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3447.1721598289373!2d-87.97229978488048!3d30.232166681814373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDEzJzU1LjgiTiA4N8KwNTgnMTIuNCJX!5e0!3m2!1sen!2sus!4v1553189885684", address:"3255 Fort Morgan Road", intersection:"30.232174, -87.970124", meds:[medInfo]},
+      {id: 4, title: 'Fort Morgan', mapSrc:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3447.265420531897!2d-88.02427398488052!3d30.2295066818154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x889a28af775bd9a1%3A0xd24c3fcd407b3ac3!2sFort+Morgan+State+Historic+Site!5e0!3m2!1sen!2sus!4v1553190090411", address:"51 AL-180, Gulf Shores, AL 36542", phone:"(251) 540-5257", meds:[medInfo]},
+      {id: 5, title: 'Hangout', mapSrc:"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d220769.79148047132!2d-87.528955!3d30.1649081!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x85d30d9042019cb0!2sThe+Hangout+Gulf+Shores!5e0!3m2!1sen!2sus!4v1553185491194", address:"101 E Beach Blvd, Gulf Shores, AL 36542", intersection:" E Beach Blvd and 59", phone:"(251) 948-3030", meds:[medInfo]},
+      {id: 6, title: 'Nature Center', mapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3446.032096456863!2d-87.64382758487967!3d30.26466668180272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDE1JzUyLjgiTiA4N8KwMzgnMjkuOSJX!5e0!3m2!1sen!2sus!4v1553189643445", address: "Campground Road, Gulf Shores, Alabama 36542", meds:[medInfo]},
+      {id: 7, title: 'National Naval Aviation Museum', mapSrc:"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d110177.51192101421!2d-87.3735542!3d30.3496071!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8890ba27d019af2d%3A0x54265e58849caee1!2sNaval+Aviation+Museum!5e0!3m2!1sen!2sus!4v1553187918527", address:"1750 Radford Blvd, Pensacola, FL 32506", phone:"(850) 452-3604", meds:[medInfo2]},
+      {id: 8, title: 'Wild Native Tours', mapSrc:"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13781.350729575428!2d-87.73365!3d30.284447!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xccc3367273e1f635!2sWildNative+Tours!5e0!3m2!1sen!2sus!4v1553189240714", address:"240 E 24th Ave, Gulf Shores, AL 36542", intersection:"E 24th Avenue and Highway 180", phone:"(251) 272-4088", meds:[medInfo]},
+    ];
+
+      // const tabTitles = listFeeds.map((listFeed) =>
+      //   <li key={listFeed.id}><a href="#">{listFeed.title}</a></li>
+      // );
+
+      const tabContents = listFeeds.map((listFeed) =>
+        <li key={listFeed.id}>
+          <Maps
+            mapSrc={listFeed.mapSrc}
+            mapTitle={[listFeed.title] + 'Field Trip Location'}
+            directions={listFeed.mapSrc}
+            address={listFeed.address}
+            intersection={listFeed.intersection}
+            phone={listFeed.phone}
+            medInfo={listFeed.meds}
+            mapWidth='600'
+          />
+        </li>
+      );
+    
+    return (
+      <div className={classes.TripMaps}>       
+        <PageHeader phImage={phImage} pageTitle=" Field Trip Maps" ovPacity=".3" Color="white" />
+
+        <div className={classes.intro}>
+          <div className={[classes.inside, classes.med2Def].join(' ')}>
+            <p>Select a trip from the map to follow the link for directions. 
+            You can also select from the list below to view details about each trip.</p>          
+          </div>
+        </div>
+
+        {/* <MapsList displayType="inlinePage" />  */}
+        <div className={classes.inside}>
+          <div className={classes.mapBox}>
+            <iframe title="Field Trip Map" 
+              className={classes.mapFrame} 
+              src="https://www.google.com/maps/d/embed?mid=1uirswzQbKV6Fh_5YrHwF6xJlLj9b09bF&hl=en&zoom=5" 
+              height="500">
+            </iframe>
+          </div>
+
+          <ul className={["uk-tab-left", classes.custTab].join(' ')} uk-tab="connect: #component-tab-left; animation: uk-animation-fade">
+            {/* {tabTitles} */}
+            <li><button type="button" href="#">ALLIGATOR ALLEY</button></li>
+            <li><button type="button" href="#">BON SECOUR NATIONAL WILDLIFE REFUGE</button></li>
+            <li><button type="button" href="#">ESTUARY</button></li>
+            <li><button type="button" href="#">FORT MORGAN</button></li>
+            <li><button type="button" href="#">HANGOUT</button></li>
+            <li><button type="button" href="#">NATURE CENTER</button></li>
+            <li><button type="button" href="#">NATIONAL NAVAL AVIATION MUSEUM</button></li>
+            <li><button type="button" href="#">WILD NATIVE TOURS</button></li>
+
+          </ul>
+
+          <ul id="component-tab-left" className={["uk-switcher", classes.custSwitcher].join(' ')}>
+            {tabContents}
+          </ul>
+        </div>
+      </div>
+    );
+  };
+
+  export default tripMaps;
+
+
+
+TRIPMAPS -- JUST MAP AND list
+  import React from "react";
+  import classes from "./TripMaps.scss";
+  import MapsList from "../../../components/Maps/MapsList";
+  import PageHeader from "../../../components/PageHeader/PageHeader"
+  import phImage from "../../../assets/images/ft1.jpg"
+
+  const tripMaps = () => {
+    return (
+      <div className={classes.TripMaps}>       
+        <PageHeader phImage={phImage} pageTitle="Field Trip Maps" ovPacity=".3" Color="white" />
+
+        <div className={classes.intro}>
+          <div className={[classes.inside, classes.med2Def].join(' ')}>
+            <p>Select a trip from the map to follow the link for directions. 
+            You can also select from the list below to view details about each trip.</p>
+          </div>
+        </div>
+
+        <div className={classes.inside}>
+          <MapsList displayType="inlinePage" /> 
+        </div>
+      </div>
+    );
+  };
+
+  export default tripMaps;
+
+
+
+className={["uk-navbar-dropdown", classes.custDrop].join(' ')}
+
+Questions:
+  - Can we just scrap the "places to visit" page?? Most of the list items are just field trip places.
+    We can just add the socials to those pages...
+
+MAP ADDRESSES
+  ft morgan address is a little different
+  Naval aviation is totally different address...nearby location though?
+  wild native: map from actual place, or meeting point (tackys)?
+
+  
+ADD A TRIP MAP:
+  - create the component, fill in info, etc...
+  - add to "MapsList.js"
+
+
+
+Copy:
+  Current Plan Your Visit page:
+    Before you leave our field trip, you will receive a password to a resource page we have designed just for our teachers. 
+    This resource keeps the learning going once you get home.
+
+    You will also receive a password to a field trip gallery of your trip. This includes photos and video. 
+    These resources are for you, your school, parents and students to use any way you see fit.
+
+
+Header/Structure
+  Home (logo)
+  About 
+    Our Story 
+      - including mission statement
+    Our Team
+    Our Partners
+    Testimonials
+
+  Facility
+    Tour the Retreat
+    Accomodations
+    FAQ's
+      - Cost, Check-In/Check-Out, What to Bring, Amenities, Attractions, Policies, Group Details, Facility, Reservations, Lost & Found
+
+  Educational Details 
+    Alabama State Learning Standards
+    NSTA Teaching Standards
+    Teacher Resources
+    CEV Credits
+
+  Plan Your Visit
+    Customize Your Visit
+    Promoting
+    Places to Visit
+    What to Bring
+
+  Resources 
+    Contact & Directions
+    Field Trip Maps
+    Contracts & Forms
+    Request Reservation

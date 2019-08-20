@@ -1,0 +1,14 @@
+{
+    "marineenv": {
+        "awscloudformation": {
+            "AuthRoleName": "marine-science-20190411101442-authRole",
+            "UnauthRoleArn": "arn:aws:iam::002942112590:role/marine-science-20190411101442-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::002942112590:role/marine-science-20190411101442-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "marine-science-20190411101442-deployment",
+            "UnauthRoleName": "marine-science-20190411101442-unauthRole",
+            "StackName": "marine-science-20190411101442",
+            "StackId": "arn:aws:cloudformation:us-east-1:002942112590:stack/marine-science-20190411101442/8953e1b0-5c6c-11e9-b555-0abba1914a70"
+        }
+    }
+}
