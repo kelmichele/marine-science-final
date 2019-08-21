@@ -20,8 +20,13 @@
 
 
   @include bp(tb) {
-    h2{font-size:19px;}
+    h2{font-size:18px;}
     p{font-size:15px;}
     // a img{width:80%; @include center-block();}
+  }
+  
+  @include bp(tn) {
+    h2{font-size:17px;}
+    p{font-size:14px;}
   }
 }

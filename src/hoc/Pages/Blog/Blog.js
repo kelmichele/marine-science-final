@@ -7,10 +7,10 @@ const blog = () => {
     <div className={classes.Blog}>
       <Helmet>
         <title>Marine Science Adventures Blog</title>
-        <meta name="description" content="" />
+        <meta name="description" content="Your Marine Science Adventures don't stop just because your trip ends! Use our blog to stay connected, and read about all the latest MSA projects, lessons, and news." />
       </Helmet>
       
-      <div className={classes.SimpleTop}>
+      <div className={[classes.SimpleTop, classes.smLessTop].join(' ')}>
         <h1>Marine Science Adventures Blog</h1>
       </div>
       

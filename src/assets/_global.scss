@@ -95,11 +95,15 @@ body {font-family: $body;
   
   @include bp(tn) {
     h1{font-size:1.6rem;}
+    
+    &.smLessTop{margin-bottom: 15px;}
   }
   
   @include bp(oc) {padding:10px 0;
     h1{font-size:1.4rem;}
     p{font-size:15px;}
+    
+    &.smLessTop{margin-bottom: 5px;}
   }
   
   @include bp(sm) {
