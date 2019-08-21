@@ -121,7 +121,7 @@ class Home extends Component {
         <div className={classes.clearfix} />
         
         <div className={[classes.photoGall, ["uk-grid"]].join(' ')} uk-lightbox="animation: slide;">
-          <div className="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slideshow="animation: push" style={{ paddingLeft: '0'}}>
+          <div className="uk-position-relative uk-visible-toggle" tabIndex="-1" uk-slideshow="animation: push" style={{ paddingLeft: '0'}}>
             <ul className={[classes.photoItems,"uk-slideshow-items"].join(' ')}>
               <li className={classes.photoLi}>
                 <img src={bg3} className={[classes.imgResponsive, "uk-position-bottom-left"].join(' ')} alt="" />

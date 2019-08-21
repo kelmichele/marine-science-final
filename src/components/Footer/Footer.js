@@ -7,7 +7,7 @@ import { NavLink } from "react-router-dom";
 import Accordion from "../../components/Accordion/Accordion";
 
 const Menu1 = (
-  <ul className={classes.footNav}>
+  <ul key="menu1" className={classes.footNav}>
     <li><NavLink to="/contact">Contact Us</NavLink></li>
     <li><NavLink to="/accommodations">Our Facility</NavLink></li>
     <li><NavLink to="/our-story">Our Story</NavLink></li>
@@ -18,7 +18,7 @@ const Menu1 = (
 );
 
 const Menu2 = (
-  <ul className={classes.footNav}>
+  <ul key="menu2" className={classes.footNav}>
     <li><NavLink to="/book-now">Book Now</NavLink></li>
     <li><NavLink to="/mission-goals-objectives">Mission, Goals, &amp; Objectives</NavLink></li>
     <li><NavLink to="/what-to-bring">What to Bring</NavLink></li>
@@ -29,7 +29,7 @@ const Menu2 = (
 );
 
 const Menu3 = (
-  <ul className={classes.footNav}>
+  <ul key="menu3" className={classes.footNav}>
     <li><NavLink to="/educational-details">Alabama State Learning Standards</NavLink></li>
     <li><NavLink to="/teacher-resources">Teacher Resources</NavLink></li>
     <li><NavLink to="/professional-development-seminars">Professional Development Seminars</NavLink></li>
@@ -38,7 +38,7 @@ const Menu3 = (
 
 
 const footer = () => {
-  const accItems = [
+  const ftAccItems = [
     {id: 101, title: 'About Us', content: [Menu1]},
     {id: 102, title: 'About the Trip', content: [Menu2]},
     {id: 103, title: 'Educational Details', content: [Menu3]},
@@ -68,7 +68,7 @@ const footer = () => {
           <div className={classes.gin}>
             <h4>Get Information</h4>          
 
-            <Accordion accItems={accItems} altClass="FtAcc" Shade="uk-light" />          
+            <Accordion accItems={ftAccItems} altClass="FtAcc" Shade="uk-light" />          
           </div>
           
           

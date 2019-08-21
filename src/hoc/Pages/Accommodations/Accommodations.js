@@ -100,7 +100,7 @@ export default function CenteredTabs() {
       </div>
    
       <AppBar position="static" className={classes.tabHD}>
-        <Tabs className={classes.tabWrap} value={value} onChange={handleChange} indicatorColor="border" centered>
+        <Tabs className={classes.tabWrap} value={value} onChange={handleChange} indicatorColor="primary" centered>
           <Tab className={classes.tabName} label="Details" />
           <Tab className={classes.tabName} label="Floor Plans" />
           <Tab className={classes.tabName} label="Location" />

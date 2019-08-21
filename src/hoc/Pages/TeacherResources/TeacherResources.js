@@ -15,7 +15,7 @@ import Accordion from "../../../components/Accordion/Accordion";
 //   .uk-lightbox.uk-open{{ opacity:'.5' }}
 // </style> <div className={classes.clearfix} /><div className={classes.spacerBTN} />*/}
 const dls = (
-  <div className={[classes.resource].join(' ')}>
+  <div key="dls" className={[classes.resource].join(' ')}>
     <a href={brochure} target="_blank" rel="noopener noreferrer" className={[classes.msLink, classes.inline].join(' ')}>MSA Brochure</a>
     <a href={InstResources} target="_blank" rel="noopener noreferrer" className={[classes.msLink, classes.inline, classes.right].join(' ')}>Instructional Resources</a>
     <a href={marineEnviro} target="_blank" rel="noopener noreferrer" className={[classes.msLink, classes.inline].join(' ')}>Marine Environment</a>
@@ -24,7 +24,7 @@ const dls = (
 );
 
 const math = (
-  <div className={[classes.math, ["uk-grid"]].join(' ')} uk-lightbox="animation: slide;">   
+  <div key="math" className={[classes.math, ["uk-grid"]].join(' ')} uk-lightbox="animation: slide;">   
     <p>Use the following information to create math assignments for your students. 
     Click on an a graph to view the full image.</p>
     
@@ -54,7 +54,7 @@ const math = (
 );
 
 const comp = (
-  <div className={classes.comp}>
+  <div key="comp" className={classes.comp}>
     <p>We would like to include your students’ compositions about their Marine Science Adventures field trip 
       as a part of our blog. Blogs must be around 250 words, and can include up to three original photos and one 
       video that does not exceed 5 minutes. Please send us only those compositions that you deem worthy of publishing. 

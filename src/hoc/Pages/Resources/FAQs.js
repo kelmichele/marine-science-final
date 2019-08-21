@@ -8,13 +8,13 @@ import phImage from "../../../assets/images/classGroup5.png";
 
 
 const pricing = (
-  <div>
+  <div key="pricing">
     <p>Please <a className={classes.textLink} href="mailto: gsbeachretreat@gmail.com">email us</a> for the cost. We have a standard 3-day/2-night trip, including 5 meals, but we can add extra nights -- lodging and extra meals. Some groups like to add a lunch the day of arrival, or adding a sack lunch for the ride home is also a great option.</p> 
   </div>
 );
 
 const sleepContent = (
-  <div>
+  <div key="sleepContent">
     <p>
       Each side of the retreat has 4 bunk rooms.<br/>
       2 downstairs bunk rooms sleep 16 each.
@@ -30,14 +30,14 @@ const sleepContent = (
 );
 
 const transContent = (
-  <div>
+  <div key="transContent">
     <p>Yes, you will need to have your own transportation available during your stay to take you to field trip excursions and activities.
       We can help refer you to charter transportation if needed. <b>We do not provide transportation.</b></p>
   </div>
 );
 
 const packContent = (
-  <div>
+  <div key="packContent">
     <p>
       Guests bring towels, pillows, and bedding for a twin bed -- either sheets and blanket, or a sleeping bag. Most students find it more convenient to bring a sleeping bag.  
       Also bring toiletries, sunscreen, insect repellent, clothing, hat, sunglasses, swim suit, beach towel, and extra spending money.
@@ -67,7 +67,7 @@ const packContent = (
 );
 
 const kitchenContent = (
-  <div>
+  <div key="kitchenContent">
     <p>Absolutely! Each side of the Gulf Shores Beach Retreat has a commercial kitchen equipped with 2 ovens, 2 microwaves, 2 refrigerators, 
       a stand up freezer, toasters, pots, pans, plates, silverware, and picnic tables. We have coffee makers so bring your coffee! There is a shared commercial ice machine outside of the kitchen.
     </p>
@@ -76,7 +76,7 @@ const kitchenContent = (
 );
 
 const foodContent = (
-  <div>
+  <div key="foodContent">
     <p>We provide 5 meals for a 2-night trip, but your group can bring any extra snacks and drinks you might want. </p>
     <p><b>VERY IMPORTANT: Please bring bottles of water for your picnic lunch (for the day you will be out), as well as extra waters to have 
       during the day. There is not a place to buy them once you leave the retreat. Leaders are responsible for bringing all drinks for 
@@ -94,7 +94,7 @@ const foodContent = (
 );
 
 const trashContent = (
-  <div>
+  <div key="trashContent">
     <p>We have a trash dumpster on the back side parking area of the retreat. 
       Please be sure you do not leave any trash in the rooms or outside cans upon departure. 
       Please empty all inside & outside trash, including the bunk rooms, staff rooms, meeting room, kitchen, pool area, and parking area into the dumpster.
@@ -104,7 +104,7 @@ const trashContent = (
 );
 
 const smokeContent = (
-  <div>
+  <div key="smokeContent">
     <p>No. <b>Smoking, vaping, or any tobacco products are not allowed any place at all on our property,</b> including our parking lot. 
       If someone in your group smokes, they will need to go across the street. 
       We do not allow smoking in our parking lot even if you are in a vehicle. <b>THIS IS A VERY STRICT POLICY!</b></p>
@@ -112,7 +112,7 @@ const smokeContent = (
 );
 
 const bookContent = (
-  <div>
+  <div key="bookContent">
     <p>
       Please confirm with us that your dates are available. We will email you our contract. 
       Please fill out, sign, initial 3 places, and return by fax or email along with the $500 deposit per retreat side. 
@@ -122,7 +122,7 @@ const bookContent = (
 );
 
 const gsContent = (
-  <div>
+  <div key="gsContent">
     <p>We offer exclusivity. Nobody else will be on your side of the retreat. 
       <b> No one outside of your group will be in your rooms, kitchen, or pool area, or around your kids at all.</b></p>
     <p>When you stay with us, you make your retreat side your home away from home.</p>
@@ -130,7 +130,7 @@ const gsContent = (
 );
 
 const checkinContent = (
-  <div>
+  <div key="checkinContent">
     <p>We are excited that you will be staying with us. Please email or call an hour before arrival to let us know you are headed this way. 
       If you forget, just call when you pass the Tanger Outlets in Foley. That will let us know you are about 20 minutes away. 
     </p>
@@ -150,7 +150,7 @@ const checkinContent = (
 );
 
 const msaSpec = (
-  <div>
+  <div key="msaSpec">
     <p>We do night excursions! Your students will be busy <b>day and night.</b> We do night seines and beach walks because the 
     specimens change at night.</p>
   </div>

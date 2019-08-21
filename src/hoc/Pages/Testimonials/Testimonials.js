@@ -6,7 +6,7 @@ import Accordion from "../../../components/Accordion/Accordion";
 
 
 const studentContent = (
-  <div id="students" className={[classes.TestSec, classes.studentSec].join(' ')}>
+  <div key="studentContent" id="students" className={[classes.TestSec, classes.studentSec].join(' ')}>
     {/* <span className={classes.groupTitle}>What the Students Say</span><div className={classes.spacer2} /><div className={classes.clearfix} /> */}
     {/* BOX */}
     <div className={classes.clearfix} />
@@ -133,7 +133,7 @@ const studentContent = (
 );
 
 const adminContent = (
-  <div id="administrator" className={[classes.TestSec, classes.adminSec].join(' ')}>
+  <div key="adminContent" id="administrator" className={[classes.TestSec, classes.adminSec].join(' ')}>
     <div className={classes.clearfix} />
     {/* BOX */}
     {/* <div className={classes.IgBox}> */}
@@ -175,7 +175,7 @@ const adminContent = (
 );
 
 const chapContent = (
-  <div id="chaperone" className={[classes.TestSec, classes.chapSec].join(' ')}>
+  <div key="chapContent" id="chaperone" className={[classes.TestSec, classes.chapSec].join(' ')}>
     <div className={classes.clearfix} />
     {/* <h3>Chaperone Testimonials</h3> */}
     {/* BOX */}
