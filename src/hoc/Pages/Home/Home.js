@@ -9,8 +9,8 @@ import stem from "../../../assets/images/stem.png";
 import steam from "../../../assets/images/steam.png";
 import stream from "../../../assets/images/stream.png";
 import amsti from "../../../assets/images/amsti.png";
-import video from "../../../assets/images/timelapse.MP4";
-import introVideo from "../../../assets/images/msa-intro.mp4";
+import tlVideo from "../../../assets/images/timelapse.MP4";
+// import introVideo from "../../../assets/images/msa-intro.mp4";
 import Social from "../../../hoc/Social/Social";
 import pl1 from "../../../assets/images/homePL2.png";
 import pl7 from "../../../assets/images/plNew3.png";
@@ -46,7 +46,7 @@ class Home extends Component {
            {/* uk-parallax="bgx: -150" */}
           {plaxContent1}
           <Video
-            vidSrc={video}
+            vidSrc={tlVideo}
             vidClass="homeLapse"
             frameName="video"
             Loop="true"
@@ -54,17 +54,24 @@ class Home extends Component {
             // vidHeight="800"
             // vidWidthMob="80%"
             // vidHeightMob="350"
-          /> 
+          />           
         </div>
    
         <div className={classes.mediaRow}>
           <div className={classes.inside}>
             <div className={classes.vidHlf}>
-              <Video
+              {/* <Video
                 vidSrc={introVideo}
                 // vidWidthMob="80%"
                 // vidHeightMob="350"
-              />
+              /> */}
+              <iframe 
+                title="Marine Science Adventures Intro Video 2019"
+                src="https://www.youtube.com/embed/c7w1c2dREdI" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen
+              ></iframe>
             </div>
             
             <div className={classes.textEs}><h3><span>Experience</span><br/>a once-in-a-lifetime science field trip</h3></div>
