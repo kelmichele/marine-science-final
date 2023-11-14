@@ -100,14 +100,12 @@ class Home extends Component {
         </div>
         <div className={classes.clearfix} />
         
-        <div className={classes.instaWidgetWrap}>
-          {/* <h3>Follow Us:</h3> */}
+        {/* <div className={classes.instaWidgetWrap}>
           <h3>@marinescienceadventures</h3>
           <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
           <iframe title="instagram widget" src="https://cdn.lightwidget.com/widgets/9cca07e9edda5f34ad97781d03aa6098.html" scrolling="no" allowtransparency="true" className={[classes.instaWidget, "lightwidget-widget"].join(' ')} style={{width:'100%',border:'0',overflow:'hidden'}}></iframe>
-
         </div>
-        <div className={classes.clearfix} />
+        <div className={classes.clearfix} /> */}
       
         <div className={classes.AffSec}>
           <div className={classes.medDef}>
