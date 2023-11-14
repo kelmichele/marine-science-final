@@ -91,7 +91,7 @@ export default function CenteredTabs() {
           <div className={classes.APTright}>
             <p>
               The Gulf Shores Beach Retreat has partnered with Marine Science Adventures to provide the perfect facility for your school group!
-              It is <b>safe, fun,</b> and provides an amazing atmosphere for all ages. 
+              It provides an amazing atmosphere for all ages. 
               Students, parents, and principals all love staying at our retreat center.
             </p>
             <p>The Gulf Shores Beach Retreat is the best place for your students to stay while on the learning adventure of a life time!</p>

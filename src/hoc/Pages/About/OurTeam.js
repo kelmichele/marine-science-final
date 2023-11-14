@@ -5,10 +5,7 @@ import timHill from "../../../assets/images/team-timHill.jpg";
 import johnSimpson from "../../../assets/images/team-johnSimpson.png";
 import donnaHill from "../../../assets/images/team-donnaHill.jpg";
 import kimMiller from "../../../assets/images/team-kimMiller.png";
-import suzannePendley from "../../../assets/images/team-suzannePendley.jpg";
 import lisaAllen from "../../../assets/images/team-lisaAllen.jpg";
-import evaPendley from "../../../assets/images/team-evaPendley.jpg";
-import ryanTilman from "../../../assets/images/team-ryanTilman.jpg";
 import elizabethStroh from "../../../assets/images/team-elizabethStroh.jpg";
 
 const ourTeam = () => {
@@ -34,26 +31,6 @@ const ourTeam = () => {
             </div>
             <img src={johnSimpson} alt="Dr. John Simpson, MSA Director" className={[classes.imgResponsive, classes.fwImg].join(' ')} />
           </div>
-        
-          <div className={[classes.IgBox, classes.IgRight].join(' ')}>
-            <img src={suzannePendley} alt="Suzanne Pendley, MSA Educator and Events Coordinator" className={[classes.imgResponsive, classes.mobileImg].join(' ')} />
-            <div className={classes.textBox}>
-              <h4 className={classes.teamName}>SuzAnne Pendley</h4>
-              <p className={classes.teamDets}><span>MSA Educator and Events Coordinator </span><br />Mississippi/Alabama Master Naturalist<br />
-              Bon Secour National Wildlife Refuge/<br/>Share the Beach Volunteer</p>
-            </div>
-            <img src={suzannePendley} alt="Suzanne Pendley, MSA Educator and Events Coordinator" className={[classes.imgResponsive, classes.fwImg].join(' ')} />
-          </div>
-
-          <div className={classes.IgBox}>
-            <img src={evaPendley} alt="Eva Pendley, MSA Educator" className={[classes.imgResponsive, classes.mobileImg].join(' ')} />
-            <div className={classes.textBox}>
-              <h4 className={classes.teamName}>Eva Pendley</h4>
-              <p className={classes.teamDets}><span>MSA Educator </span><br />Alabama Master Naturalist <br />
-              Bon Secour National Wildlife Refuge/<br/>Share the Beach Volunteer</p>
-            </div>
-            <img src={evaPendley} alt="Eva Pendley, MSA Educator" className={[classes.imgResponsive, classes.fwImg].join(' ')} />
-          </div>
 
           <div className={[classes.IgBox, classes.IgRight].join(' ')}>
             <img src={kimMiller} alt="Kim Miller, MSA Biologist" className={[classes.imgResponsive, classes.mobileImg].join(' ')} />
@@ -64,6 +41,7 @@ const ourTeam = () => {
             </div>
             <img src={kimMiller} alt="Kim Miller, MSA Biologist" className={[classes.imgResponsive, classes.fwImg].join(' ')} />
           </div>
+          <div className={classes.clearfix} />
 
           <div className={classes.IgBox}>
             <img src={lisaAllen} alt="Lisa Allen, MSA Biologist" className={[classes.imgResponsive, classes.mobileImg].join(' ')} />
@@ -89,17 +67,7 @@ const ourTeam = () => {
           </div>
           <div className={classes.clearfix} />
 
-          <div className={classes.IgBox}>
-            <img src={ryanTilman} alt="Ryan Tillman, MSA Biologist" className={[classes.imgResponsive, classes.mobileImg].join(' ')} />
-            <div className={classes.textBox}>
-              <h4 className={classes.teamName}>Ryan Tillman </h4>
-              <p className={classes.teamDets}><span>MSA Biologist</span><br />University of Alabama at Birmingham<br />
-              Research Biologist</p>
-            </div>
-            <img src={ryanTilman} alt="Ryan Tillman, MSA Biologist" className={[classes.imgResponsive, classes.fwImg].join(' ')} />
-          </div>
-
-          <div className={[classes.IgBox, classes.IgRight].join(' ')}>
+          <div className={[classes.IgBox].join(' ')}>
             <img src={donnaHill} alt="Donna Hill, MSA Administrator" className={[classes.imgResponsive, classes.mobileImg].join(' ')} />
             <div className={classes.textBox}>
               <h4 className={classes.teamName}>Donna Hill</h4>
@@ -107,9 +75,8 @@ const ourTeam = () => {
             </div>
             <img src={donnaHill} alt="Donna Hill, MSA Administrator" className={[classes.imgResponsive, classes.fwImg].join(' ')} />
           </div>
-          <div className={classes.clearfix} />
           
-          <div className={classes.IgBox}>
+          <div className={[classes.IgBox, classes.IgRight].join(' ')}>
             <img src={timHill} alt="Tim Hill, MSA Administrator" className={[classes.imgResponsive, classes.mobileImg].join(' ')} />
             <div className={classes.textBox}>
               <h4 className={classes.teamName}>Tim Hill</h4>

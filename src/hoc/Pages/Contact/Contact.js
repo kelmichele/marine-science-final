@@ -28,7 +28,7 @@ const kcContent = (
     
     <h2 className={classes.tmargin1}>Location Information</h2>
     <h3>Gulf Shores Beach Retreat</h3> 
-    <p className={classes.tmargin0}>The Gulf Shores Beach Retreat, a bunk-style, private facility that can sleep up to 170 people,
+    <p className={classes.tmargin0}>The Gulf Shores Beach Retreat, a bunk-style, private facility that can sleep up to 160 people,
       has partnered with Marine Science Adventures to provide an incredible experience your students will love!
     </p>
     

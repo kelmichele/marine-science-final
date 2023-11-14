@@ -9,7 +9,7 @@ import phImage from "../../../assets/images/classGroup5.png";
 
 const pricing = (
   <div key="pricing">
-    <p>Please <a className={classes.textLink} href="mailto: gsbeachretreat@gmail.com">email us</a> for the cost. We have a standard 3-day/2-night trip, including 5 meals, but we can add extra nights -- lodging and extra meals. Some groups like to add a lunch the day of arrival, or adding a sack lunch for the ride home is also a great option.</p> 
+    <p>Please <a className={classes.textLink} href="mailto: gsbeachretreat@gmail.com">email us</a> for the cost. We have a standard 3-day/2-night trip, including 4 meals, but we can add extra nights -- lodging and extra meals. Some groups like to add a lunch the day of arrival, or adding a sack lunch for the ride home is also a great option.</p> 
   </div>
 );
 
@@ -31,8 +31,7 @@ const sleepContent = (
 
 const transContent = (
   <div key="transContent">
-    <p>Yes, you will need to have your own transportation available during your stay to take you to field trip excursions and activities.
-      We can help refer you to charter transportation if needed. <b>We do not provide transportation.</b></p>
+    <p>Yes, you will need to have your own transportation available during your stay to take you to field trip excursions and activities. <b>We do not provide transportation.</b></p>
   </div>
 );
 
@@ -71,24 +70,24 @@ const kitchenContent = (
     <p>Absolutely! Each side of the Gulf Shores Beach Retreat has a commercial kitchen equipped with 2 ovens, 2 microwaves, 2 refrigerators, 
       a stand up freezer, toasters, pots, pans, plates, silverware, and picnic tables. We have coffee makers so bring your coffee! There is a shared commercial ice machine outside of the kitchen.
     </p>
-    <p>For Marine Science Adventures Field Trips, we provide meals at the retreat. Our kitchens are downstairs. Please email or call for details.</p>
+    <p>For Marine Science Adventures Field Trips, we provide 4 meals at the retreat. Our kitchens are downstairs. Please email or call for details.</p>
   </div>
 );
 
 const foodContent = (
   <div key="foodContent">
-    <p>We provide 5 meals for a 2-night trip, but your group can bring any extra snacks and drinks you might want. </p>
+    {/* <p>We provide 4 meals for a 2-night trip, but your group can bring any extra snacks and drinks you might want. </p> */}
+    <p>We provide 4 meals, and <b>your group is responsible for their own dinner the second night.</b> You are responsible for either cooking your dinner the second night, or 
+    making reservations to go out (and make payment directly to the restaurant). 
+    </p>
+
     <p><b>VERY IMPORTANT: Please bring bottles of water for your picnic lunch (for the day you will be out), as well as extra waters to have 
       during the day. There is not a place to buy them once you leave the retreat. Leaders are responsible for bringing all drinks for 
       the day out.</b> We have a commercial size ice machine that you are welcome to use for your coolers. 
     </p>
+
     <p>We do not furnish coffee, so coffee lovers, please bring all your supplies. We do have 2 coffee makers you can take to your room 
       if you want coffee before 7am. The kitchen is locked 6-7am for breakfast prep. We do not have a vending area, but there is a convenience store a block away.
-    </p>
-    <p>
-      Some groups choose to do dinner the second night at a restaurant. 
-      This is fine <b>if we know well in advance,</b> and we will deduct $10 off your total per person.
-      <b>You are responsible for the restaurant night,</b> as far as making reservations and payment directly to the restaurant.
     </p>
   </div>
 );
@@ -167,7 +166,7 @@ const faqs = () => {
     {id: 7, title: 'Do you have a kitchen?', content: [kitchenContent]},
     {id: 8, title: 'Does our group need to bring food?', content: [foodContent]},
     {id: 9, title: 'Where do we take our trash?', content: [trashContent]},
-    {id: 10, title: 'Where do we park?', content: 'Each retreat side has it’s own parking. There is space for a bus to park on each side. There is also extra public parking across the street, but trailers and buses are not allowed in the public parking. '},
+    {id: 10, title: 'Where do we park?', content: "Each retreat side has it's own parking. There is space for a bus to park on each side. We have limited parking, so please carpool if you are not coming in a bus."},
     {id: 11, title: 'Do you have a meeting room?', content: 'Yes, we have a 1600 sq ft meeting room with 200 folding chairs, tables, and a 55” flat screen tv. Our meeting room is upstairs over the kitchens. After the last morning summary, please fold your chairs against the wall. '},
     {id: 12, title: 'Do we share a pool or other amenities with other groups?', content: 'No! You will have your own private pool with quality lounge chairs, sand volleyball, basketball, parking, charcoal grills, and kitchen. '},
     {id: 13, title: 'I heard you also rent out your retreat for other groups? ', content: 'What types of groups stay there? We host church youth groups, ball teams, scouts, school groups, college groups, and family reunions. We are ideal for most large groups. We also have a fantastic new Gulf Coast History Field Trip. Please email for details. '},
